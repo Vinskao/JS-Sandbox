@@ -20,6 +20,23 @@ console.time('hello');
   console.log('hello');
 console.timeEnd('hello');
 
+//var,let,const
+var name = 'John';
+console.log(name);
+name = 'Jane';
+
+console.log(name);
+//init var
+var greeting;
+console.log(greeting);
+greeting = 'Hello';
+console.log(greeting); 
+//letters, numbers, _, $
+//can not start with number
+// multi word vars
+var firstname = 'John';// camel case
+var firstname = 'Jane';// underscore
+var firstname = 'Tom';// pascal case
 
 /*
   multi
