@@ -99,3 +99,5 @@ val = String(new Date());
 console.log(val);
 console.log(typeof val);
 console.log(val.length);
+name = 'fuck taipei'
+var = name + ' ' + age;
