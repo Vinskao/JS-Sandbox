@@ -87,17 +87,32 @@
 //   city: 'New York',
 //   state: 'NY'
 // }
-let val
+// let val
 
-//number to string
+// //number to string
 
-//toString()
-val = (5).toString();
-val = (true).toString();
-val = String(new Date());
-//output
-console.log(val);
-console.log(typeof val);
-console.log(val.length);
-name = 'fuck taipei'
-var = name + ' ' + age;
+// //toString()
+// val = (5).toString();
+// val = (true).toString();
+// val = String(new Date());
+// //output
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.length);
+// name = 'fuck taipei'
+// var = name + ' ' + age;
+
+//string to number
+val = Number('5')
+val = Number(true);
+val = Number(null);
+val = Number('hello');
+val = Number([1, 2, 3, 4];
+
+val = parseInt('5');
+val = parseFloat('5');
+
+const val1 = String(5);
+const val2 = 5.5;
+const sum = Ｎumber(val1 + val2);
+
