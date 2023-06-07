@@ -109,10 +109,21 @@ val = Number(null);
 val = Number('hello');
 val = Number([1, 2, 3, 4];
 
-val = parseInt('5');
-val = parseFloat('5');
+//val = parseInt('5');
+//val = parseFloat('5');
 
-const val1 = String(5);
-const val2 = 5.5;
-const sum = Ｎumber(val1 + val2);
+//const val1 = String(5);
+//const val2 = 5.5;
+//const sum = Ｎumber(val1 + val2);
 
+const num1 = 5;
+const num2 = 5.5;
+let val;
+
+val = num1 + num2;
+val = num1 - num2;
+val = num1 * num2;
+val = num1 / num2;
+val = num1 % num2;
+
+console.log(val);
