@@ -103,11 +103,11 @@
 // var = name + ' ' + age;
 
 //string to number
-val = Number('5')
-val = Number(true);
-val = Number(null);
-val = Number('hello');
-val = Number([1, 2, 3, 4];
+// val = Number('5')
+// val = Number(true);
+// val = Number(null);
+// val = Number('hello');
+// val = Number([1, 2, 3, 4];
 
 //val = parseInt('5');
 //val = parseFloat('5');
@@ -125,5 +125,18 @@ val = num1 - num2;
 val = num1 * num2;
 val = num1 / num2;
 val = num1 % num2;
+
+//math object
+val = Math.pi;
+val = Math.e;
+val = Math.round(2.4);
+val = Math.floor(2.4);
+val = Math.ceil(2.4);
+val = Math.sqrt(2.4);
+val = Math.abs(2.4);
+val = Math.pow(2.4, 3);
+val = Math.max(2.4, 3.4);
+val = Math.min(2.4, 3.4);
+val = Math.random();
 
 console.log(val);
