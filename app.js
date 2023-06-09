@@ -159,4 +159,38 @@ val += 'kao';
 
 val = 'hello, my name is ' + firstname
 
+//escaping
+val = "that\'s awesome";
+
+//length
+val = firstname.length;
+val = lastname.length;
+
+//concat
+val = firstname.concat(' ', lastname);
+
+//change case
+val = firstname.toUpperCase();
+val = lastname.toLowerCase();
+val = firstname[2]
+//indexof()
+val = firstname.indexOf('1');
+val = firstname.lastIndexOf('1');
+
+//charat()
+val = firstname.charAt(2);
+val = firstname.charCodeAt(2);
+val = firstname.charCodeAt(3);
+val = firstname.charCodeAt(4);
+val = firstname.charCodeAt(5);
+val = firstname.charCodeAt(6);
+
+//get last char
+val = firstname.charAt(firstname.length -1);
+//substring()
+val = firstname.substring(0, 4);
+//slice()
+val = firstname.slice(0, 4);
+//split()
+val = str.split()
 console.log(val);
