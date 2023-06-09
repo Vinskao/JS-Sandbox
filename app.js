@@ -55,7 +55,7 @@
 // // }
 
 // // person.name = 'Jane';
-// // person.age = 30;
+// person.age = 30;
 
 // // // console.log(person);
 
@@ -116,27 +116,47 @@
 //const val2 = 5.5;
 //const sum = Ｎumber(val1 + val2);
 
-const num1 = 5;
-const num2 = 5.5;
+// const num1 = 5;
+// const num2 = 5.5;
+// let val;
+
+// val = num1 + num2;
+// val = num1 - num2;
+// val = num1 * num2;
+// val = num1 / num2;
+// val = num1 % num2;
+
+// //math object
+// val = Math.pi;
+// val = Math.e;
+// val = Math.round(2.4);
+// val = Math.floor(2.4);
+// val = Math.ceil(2.4);
+// val = Math.sqrt(2.4);
+// val = Math.abs(2.4);
+// val = Math.pow(2.4, 3);
+// val = Math.max(2.4, 3.4);
+// val = Math.min(2.4, 3.4);
+// val = Math.random(); //will gives random number
+
+// console.log(val);
+
+const firstname = 'John'; 
+const lastname = 'Doe';
+
 let val;
 
-val = num1 + num2;
-val = num1 - num2;
-val = num1 * num2;
-val = num1 / num2;
-val = num1 % num2;
+val = firstname + lastname;
 
-//math object
-val = Math.pi;
-val = Math.e;
-val = Math.round(2.4);
-val = Math.floor(2.4);
-val = Math.ceil(2.4);
-val = Math.sqrt(2.4);
-val = Math.abs(2.4);
-val = Math.pow(2.4, 3);
-val = Math.max(2.4, 3.4);
-val = Math.min(2.4, 3.4);
-val = Math.random();
+
+console.log(val);
+
+//concatenate
+val = firstname + ' ' + lastname
+//append
+val = 'max ';
+val += 'kao';
+
+val = 'hello, my name is ' + firstname
 
 console.log(val);
