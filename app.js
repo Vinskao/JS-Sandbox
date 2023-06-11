@@ -143,6 +143,8 @@
 
 const firstname = 'John'; 
 const lastname = 'Doe';
+const str = 'hey you'
+const tags = 'maybe you should'
 
 let val;
 
@@ -193,4 +195,18 @@ val = firstname.substring(0, 4);
 val = firstname.slice(0, 4);
 //split()
 val = str.split()
+val = tags.split(',')
+console.log(val);
+
+//replace()
+val = str.replace('1', '2');
+
+//includes()
+val = str.includes('1');
+val = str.includes('2');
+val = str.includes('3');
+val = str.includes('4');
+val = str.includes('5');
+val = str.includes('6');
+
 console.log(val);
