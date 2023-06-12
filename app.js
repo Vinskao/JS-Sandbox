@@ -141,72 +141,99 @@
 
 // console.log(val);
 
-const firstname = 'John'; 
-const lastname = 'Doe';
-const str = 'hey you'
-const tags = 'maybe you should'
+// const firstname = 'John'; 
+// const lastname = 'Doe';
+// const str = 'hey you'
+// const tags = 'maybe you should'
 
-let val;
+// let val;
 
-val = firstname + lastname;
+// val = firstname + lastname;
 
 
-console.log(val);
+// console.log(val);
 
-//concatenate
-val = firstname + ' ' + lastname
-//append
-val = 'max ';
-val += 'kao';
+// //concatenate
+// val = firstname + ' ' + lastname
+// //append
+// val = 'max ';
+// val += 'kao';
 
-val = 'hello, my name is ' + firstname
+// val = 'hello, my name is ' + firstname
 
-//escaping
-val = "that\'s awesome";
+// //escaping
+// val = "that\'s awesome";
 
-//length
-val = firstname.length;
-val = lastname.length;
+// //length
+// val = firstname.length;
+// val = lastname.length;
 
-//concat
-val = firstname.concat(' ', lastname);
+// //concat
+// val = firstname.concat(' ', lastname);
 
-//change case
-val = firstname.toUpperCase();
-val = lastname.toLowerCase();
-val = firstname[2]
-//indexof()
-val = firstname.indexOf('1');
-val = firstname.lastIndexOf('1');
+// //change case
+// val = firstname.toUpperCase();
+// val = lastname.toLowerCase();
+// val = firstname[2]
+// //indexof()
+// val = firstname.indexOf('1');
+// val = firstname.lastIndexOf('1');
 
-//charat()
-val = firstname.charAt(2);
-val = firstname.charCodeAt(2);
-val = firstname.charCodeAt(3);
-val = firstname.charCodeAt(4);
-val = firstname.charCodeAt(5);
-val = firstname.charCodeAt(6);
+// //charat()
+// val = firstname.charAt(2);
+// val = firstname.charCodeAt(2);
+// val = firstname.charCodeAt(3);
+// val = firstname.charCodeAt(4);
+// val = firstname.charCodeAt(5);
+// val = firstname.charCodeAt(6);
 
-//get last char
-val = firstname.charAt(firstname.length -1);
-//substring()
-val = firstname.substring(0, 4);
-//slice()
-val = firstname.slice(0, 4);
-//split()
-val = str.split()
-val = tags.split(',')
-console.log(val);
+// //get last char
+// val = firstname.charAt(firstname.length -1);
+// //substring()
+// val = firstname.substring(0, 4);
+// //slice()
+// val = firstname.slice(0, 4);
+// //split()
+// val = str.split()
+// val = tags.split(',')
+// console.log(val);
 
-//replace()
-val = str.replace('1', '2');
+// //replace()
+// val = str.replace('1', '2');
 
-//includes()
-val = str.includes('1');
-val = str.includes('2');
-val = str.includes('3');
-val = str.includes('4');
-val = str.includes('5');
-val = str.includes('6');
+// //includes()
+// val = str.includes('1');
+// val = str.includes('2');
+// val = str.includes('3');
+// val = str.includes('4');
+// val = str.includes('5');
+// val = str.includes('6');
 
-console.log(val);
+// console.log(val);
+
+const name = 'john';
+const age = 20;
+const job = 'teacher';
+const city = 'New York';
+let html;
+//without template strings(es5)
+html = '<ul><li>Name:'+ name + '</li><li>Age:'+ age + '</li><li>Job:'+ job + '</li><li>City:'+ city + '</li></ul>';
+html = '<ul>' +
+        '<li>Name:'+ name + '</li>' +
+        '<li>Age:'+ age + '</li>' +
+        '<li>Job:'+ job + '</li>' +
+        '<li>City:'+ city + '</li>'+
+        '</ul>';
+
+//with template strings(es6)
+html = `
+<ul>
+    <li>Name: ${name}</li>
+    <li>Age: ${age}</li>
+    <li>Job: ${job}</li>
+    <li>City: ${city}</li>
+    <li>${2+2}</li>
+    <li>${age>30}</li>
+</ul>
+`;
+document.body.innerHTML = html;
