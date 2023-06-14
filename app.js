@@ -237,3 +237,57 @@ html = `
 </ul>
 `;
 document.body.innerHTML = html;
+
+//create some arrays
+const numbers = [1,2,3,4,5,6,7,8,9];
+const numbers2 = new Array(1,2,3,4,5,33);
+const fruits = ['apple', 'banana', 'cherry'];
+const mixed = [2, 'fuck', true];
+
+let val;
+//get array length
+//check if is array
+val = Array.isArray(numbers);
+//get single value
+val = numbers[3];
+val = numbers[2];
+//insert into array
+numbers[2] = 100;
+//find index of value
+val = numbers.indexOf(100);
+
+//mutating array
+//add on to end
+numbers.push(100);
+//add on to front
+numbers.unshift(100);
+//take off from end
+numbers.pop();
+//take off from front
+numbers.shift();
+//splice values
+numbers.splice(1,1);
+//reverse
+numbers.reverse();
+//concatenate array
+val = numbers.concat(numbers2);
+
+//sorting array
+val = fruits.sort();
+val = numbers.sort();
+//use compare function
+// val = numbers.sort(function(a,b){
+//     return a-b;
+// });
+
+// val = numbers.sort(function(a,b){
+//     return b-a;
+// });
+
+//find
+function under50(num){
+    return num < 50;
+}
+
+console.log(numbers);
+console.log(val);
