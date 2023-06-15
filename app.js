@@ -291,3 +291,24 @@ function under50(num){
 
 console.log(numbers);
 console.log(val);
+
+const person = {
+    firstName: 'John',
+    lastName: 'Doe'
+    age: 20,
+    email: 'envkt@example.com'
+    hobbies: ['coding', 'music'],
+    address: {
+        city: 'New York',
+        state: 'NY'
+    }
+}
+
+let val;
+
+val = person;
+//get specific value
+val = person.firstName;
+val = person['firstName'];
+
+console.log(val);
