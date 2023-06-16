@@ -302,6 +302,10 @@ const person = {
         city: 'New York',
         state: 'NY'
     }
+    getBirthYear : function(){
+        return 1994;
+    }
+
 }
 
 let val;
@@ -310,5 +314,11 @@ val = person;
 //get specific value
 val = person.firstName;
 val = person['firstName'];
+val = person.age;
+val = person.hobbies[1];
+val = person.address.city;
+val = person.getBirthYear();
+
 
 console.log(val);
+
