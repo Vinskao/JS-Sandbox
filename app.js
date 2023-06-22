@@ -294,16 +294,16 @@ console.log(val);
 
 const person = {
     firstName: 'John',
-    lastName: 'Doe'
+    lastName: 'Doe',
     age: 20,
-    email: 'envkt@example.com'
+    email: 'envkt@example.com',
     hobbies: ['coding', 'music'],
     address: {
         city: 'New York',
         state: 'NY'
-    }
+    },
     getBirthYear : function(){
-        return 1994;
+        return 1994 - this.age;
     }
 
 }
@@ -321,4 +321,16 @@ val = person.getBirthYear();
 
 
 console.log(val);
+
+const people = [
+    {name:'John', age: 30},
+    {name:'Max', age:66},
+    {name:'Moo', age:565},
+
+];
+
+for(let i = 0; i < people.length; i++){
+    console.log(people[i].name);
+}
+
 
