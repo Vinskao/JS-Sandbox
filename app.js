@@ -8,4 +8,14 @@ val = today.getMonth();
 val = today.getDate();
 val = today.getDay();
 val = today.getFullYear();
-console.log(val);
+val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getTime();
+
+birthday.setMonth(2);
+birthday.setDate(12);
+birthday.setFullYear(1985);
+
+
+console.log(birthday);
