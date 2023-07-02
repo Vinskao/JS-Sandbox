@@ -1,21 +1,48 @@
-let val;
-const today = new Date();
-let birthday = new Date('9-10-1981 11:25:00');
-birthday = new Date('September 10 1981');
-birthday = new Date('9/10/1981');
+const id = 100;
 
-val = today.getMonth();
-val = today.getDate();
-val = today.getDay();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getMinutes();
-val = today.getSeconds();
-val = today.getTime();
+if(id == 101){
+    console.log("correct");
+} else {
+    console.log("wrong");
+} 
 
-birthday.setMonth(2);
-birthday.setDate(12);
-birthday.setFullYear(1985);
+//!means not equal to
+if(id !=101){
+    console.log("correct");
+} else {
+    console.log("wrong");
+} 
+
+if(id === 100){
+    console.log("correct");
+} else {
+    console.log("wrong");
+} 
+
+if(id !== 100){
+    console.log("correct");
+} else {
+    console.log("wrong");
+} 
+
+if(typeof id !== 'undefined') {
+    console.log(`the id is ${id}`);
+} else {
+    console.log("no id");
+}
 
 
-console.log(birthday);
+//greater or less than
+if(id >= 100){
+    console.log("correct");
+} else {
+    console.log("wrong");
+} 
+
+//if else
+const color = 'yellow';
+if(color === 'yellow'){
+    console.log("color is yellow");
+} else if (color === 'blue'){
+    console.log("color is blue");
+} 
