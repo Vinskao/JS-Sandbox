@@ -1,70 +1,38 @@
-const id = 100;
-
-if(id == 101){
-    console.log("correct");
-} else {
-    console.log("wrong");
-} 
-
-//!means not equal to
-if(id !=101){
-    console.log("correct");
-} else {
-    console.log("wrong");
-} 
-
-if(id === 100){
-    console.log("correct");
-} else {
-    console.log("wrong");
-} 
-
-if(id !== 100){
-    console.log("correct");
-} else {
-    console.log("wrong");
-} 
-
-if(typeof id !== 'undefined') {
-    console.log(`the id is ${id}`);
-} else {
-    console.log("no id");
-}
-
-
-//greater or less than
-if(id >= 100){
-    console.log("correct");
-} else {
-    console.log("wrong");
-} 
-
-//if else
 const color = 'yellow';
-if(color === 'yellow'){
-    console.log("color is yellow");
-} else if (color === 'blue'){
-    console.log("color is blue");
-} 
-//logical operators
-const name = 'kao';
-const age = 17;
-//and &&
-if(age > 0 && age < 12){
-    console.log(`${name} is a child`);
-} else if (age >= 13 && age < 19){
-    console.log(`${name} is a teen`);
-} else {
-    console.log(`${name} is an adult`);
+switch(color) {
+    case 'red':
+        console.log('color is red');
+        break; 
+    case 'green':
+        console.log('color is green');
+        break; 
+    default:
+        console.log('color is not red or green');
+        break; 
 }
 
-//or|| just one is true
-if (age < 16 || age> 65){
-    console.log(`${name} can not run in race`);
-}else {
-    console.log(`${name} can run in a race`);
+switch(new Date().getDay()) {
+    case 0:
+        day = 'Sunday';
+        break;
+    case 1:
+        day = 'Monday';
+        break;
+    case 2:
+        day = 'Tuesday';
+        break;
+    case 3:
+        day = 'Wednesday';
+        break;
+    case 4:
+        day = 'Thursday';
+        break;
+    case 5:
+        day = 'Friday';
+        break;
+    case 6:
+        day = 'Saturday';
+        break;
 }
 
-
-//ternary operator 
-console.log(id === 100 ? 'correct' : 'wrong');
+console.log(`today is ${day}`);
